@@ -5,7 +5,19 @@ For the sake of implementation, we’ll take the base input image, a content ima
 
 ## HIGH LEVEL ARCHITECTURE
 Neural style transfer uses a pretrained convolution neural network. Here, we use VGG-19. Then to define a loss function which blends two images seamlessly to create visually appealing art, NST defines the following inputs:
-A content image (c) — the image we want to transfer a style to.
-A style image (s) — the image we want to transfer the style from.
-An input (generated) image (g) — the image that contains the final result (the only trainable variable).
+1. A content image (c) — the image we want to transfer a style to.
+2. A style image (s) — the image we want to transfer the style from.
+3. An input (generated) image (g) — the image that contains the final result (the only trainable variable).
 
+![alt text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-2/architecture.jpeg)
+
+In order to get both the content and style representations of our image, we will look at some intermediate layers within our model. As we go deeper into the model, these intermediate layers represent higher and higher order features. In this case, we are using the network architecture VGG19, a pretrained image classification network. These intermediate layers are necessary to define the representation of content and style from our images. For an input image, we will try to match the corresponding style and content target representations at these intermediate layers.
+
+## LOSS FUNCTIONS
+In this section we define two loss functions; the content loss function and the style loss function. The content loss function ensures that the activations of the higher layers are similar between the content image and the generated image. The style loss function makes sure that the correlation of activations in all the layers are similar between the style image and the generated image. We will be discussing the details below.
+
+### CONTENT LOSS FUNCTION
+The content cost function is making sure that the content present in the content image is captured in the generated image. It has been found that CNNs capture information about content in the higher levels, where the lower levels are more focused on individual pixel values. Therefore, we use the top-most CNN layer to define the content loss function.
+Let A^l_{ij}(I) be the activation of the l th layer, i th feature map and j th position obtained using the image I. Then the content loss is defined as,
+
+Essentially L_{content} captures the root mean squared error between the activations produced by the generated image and the content image.
