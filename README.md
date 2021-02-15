@@ -46,7 +46,7 @@ By controlling α and β we can control the amount of content and style injected
 ## RESULT
 
 ### **CONTENT IMAGE & STYLE IMAGE**
-![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-2/content1.png)
+![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-2/content%26style.png)
 
 
 ### **GENERATED IMAGE**
