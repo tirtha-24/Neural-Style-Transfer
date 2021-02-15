@@ -9,3 +9,5 @@ A content image (c) — the image we want to transfer a style to.
 A style image (s) — the image we want to transfer the style from.
 An input (generated) image (g) — the image that contains the final result (the only trainable variable).
 
+![alt text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-2/architecture.jpeg)
+
