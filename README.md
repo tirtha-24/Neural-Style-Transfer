@@ -45,13 +45,15 @@ By controlling α and β we can control the amount of content and style injected
 
 ## RESULT
 
-**CONTENT IMAGE**
+### **CONTENT IMAGE**
 ![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-1/Green_Sea_Turtle_grazing_seagrass.jpg)
 
-**STYLE IMAGE**
+### **STYLE IMAGE**
 ![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-1/1024px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg)
 
-**GENERATED IMAGE**
+### **GENERATED IMAGE**
 ![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-2/output1.png)
 
 
+
+[**Reference**](https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-neural-style-transfer-ef88e46697ee)
