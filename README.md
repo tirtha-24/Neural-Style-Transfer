@@ -38,6 +38,20 @@ The style matrix is essentially a Gram matrix, where the (i,j) th element of the
 
 ### FINAL LOSS
 
-where α and β are user-defined hyperparameters.
-By controlling α and β you can control the amount of content and style injected to the generated image.
 ![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-2/final%20loss.png)
+
+where α and β are user-defined hyperparameters.
+By controlling α and β we can control the amount of content and style injected to the generated image.
+
+## RESULT
+
+**CONTENT IMAGE**
+![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-1/Green_Sea_Turtle_grazing_seagrass.jpg)
+
+**STYLE IMAGE**
+![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-1/1024px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg)
+
+**GENERATED IMAGE**
+![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-2/output1.png)
+
+
