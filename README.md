@@ -36,7 +36,8 @@ w^l (chosen uniform in this tutorial) is a weight given to each layer during los
 
 The style matrix is essentially a Gram matrix, where the (i,j) th element of the style matrix is computed by computing the element wise multiplication of the i th and j th feature maps and summing across both width and height.
 
-### Final Loss
+### FINAL LOSS
 
 where α and β are user-defined hyperparameters.
 By controlling α and β you can control the amount of content and style injected to the generated image.
+![alt_text](https://github.com/tirtha-24/Neural-Style-Transfer/blob/master/images-2/final%20loss.png)
